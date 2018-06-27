@@ -7,6 +7,22 @@
     <groupId>MavProg</groupId>
     <artifactId>mavID</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <properties>
+        <groupId>org.hibernate</groupId>
+    </properties>
 
     <!-- https://mvnrepository.com/artifact/postgresql/postgresql -->
    <dependencies>
@@ -15,6 +31,26 @@
         <artifactId>postgresql</artifactId>
         <version>9.1-901-1.jdbc4</version>
     </dependency>
+
+
+       <!-- Hibernate -->
+       <!-- to start need only this -->
+       <dependency>
+           <groupId>org.hibernate</groupId>
+           <artifactId>hibernate-core</artifactId>
+           <version>5.3.0.CR2</version>
+       </dependency>
+
+
+
+       <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-commons-annotations -->
+       <dependency>
+           <groupId>org.hibernate</groupId>
+           <artifactId>hibernate-commons-annotations</artifactId>
+           <version>5.0.3.Final</version>
+       </dependency>
+
+       <!--END Hibernate -->
     </dependencies>
 
 
